@@ -24,7 +24,6 @@ class MetricFactory extends Factory
             'year' => $datetime->year,
             'month' => $datetime->month,
             'day' => $datetime->day,
-            'hour' => null,
             'measurable_type' => null,
             'measurable_id' => null,
             'value' => 1,

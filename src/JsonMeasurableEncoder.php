@@ -20,7 +20,6 @@ class JsonMeasurableEncoder implements MeasurableEncoder
             'year' => $metric->year(),
             'month' => $metric->month(),
             'day' => $metric->day(),
-            'hour' => $metric->hour(),
             'model' => $metric->model(),
             'measurable' => $measurable ? get_class($measurable) : null,
             'measurable_key' => $measurable?->getKeyName() ?? null,
@@ -48,8 +47,7 @@ class JsonMeasurableEncoder implements MeasurableEncoder
         $date = CarbonImmutable::create(
             $attributes['year'],
             $attributes['month'],
-            $attributes['day'],
-            $attributes['hour'] ?? 0
+            $attributes['day']
         );
 
         return new MetricData(
@@ -59,7 +57,6 @@ class JsonMeasurableEncoder implements MeasurableEncoder
             date: $date,
             measurable: $measurable,
             additional: $attributes['additional'] ?? [],
-            hourly: $attributes['hour'] ?? false,
             model: $attributes['model'] ?? null,
         );
     }

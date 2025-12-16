@@ -2,6 +2,7 @@
 
 namespace LeadMarvels\Metrics;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -37,16 +38,25 @@ class Metric extends Model
         return new MetricBuilder($query);
     }
 
+    protected static function booted()
+    {
+        static::created(function ($metric) {
+            $metric->update([
+                'date_at' => Carbon::create($metric->year, $metric->month, $metric->day),
+            ]);
+        });
+    }
+
     /**
      * The attributes that should be cast.
      */
     protected function casts(): array
     {
         return [
+            'date_at' => 'date',
             'year' => 'integer',
             'month' => 'integer',
             'day' => 'integer',
-            'hour' => 'integer',
             'value' => 'integer',
         ];
     }

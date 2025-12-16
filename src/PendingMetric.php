@@ -33,10 +33,6 @@ class PendingMetric
      */
     protected ?string $model = null;
 
-    /**
-     * Whether to track hourly metrics.
-     */
-    protected bool $trackHourly = false;
 
     /**
      * Additional attributes to store with the metric.
@@ -102,16 +98,6 @@ class PendingMetric
     }
 
     /**
-     * Enable hourly tracking for the metric.
-     */
-    public function hourly(): static
-    {
-        $this->trackHourly = true;
-
-        return $this;
-    }
-
-    /**
      * Set additional attributes to store with the metric.
      *
      * @param  array<string, mixed>  $attributes
@@ -145,7 +131,6 @@ class PendingMetric
             $this->date,
             $this->measurable,
             $this->additional,
-            $this->trackHourly,
             $this->model,
         );
     }

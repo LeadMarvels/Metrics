@@ -5,8 +5,8 @@ namespace LeadMarvels\Metrics;
 use BackedEnum;
 use Carbon\CarbonImmutable;
 use Carbon\CarbonInterface;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Database\Eloquent\Model;
 
 class MetricData implements Measurable
 {
@@ -22,10 +22,9 @@ class MetricData implements Measurable
         protected ?CarbonInterface $date = null,
         protected ?Model $measurable = null,
         protected array $additional = [],
-        protected bool $hourly = false,
         protected ?string $model = null,
     ) {
-        $this->date ??= new CarbonImmutable;
+        $this->date ??= new CarbonImmutable();
     }
 
     /**
@@ -74,14 +73,6 @@ class MetricData implements Measurable
     public function day(): int
     {
         return $this->date->day;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function hour(): ?int
-    {
-        return $this->hourly ? $this->date->hour : null;
     }
 
     /**
