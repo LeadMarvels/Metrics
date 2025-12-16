@@ -1,6 +1,6 @@
 <?php
 
-namespace DirectoryTree\Metrics\Commands;
+namespace LeadMarvels\Metrics\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

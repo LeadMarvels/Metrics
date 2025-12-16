@@ -1,8 +1,8 @@
 <?php
 
-namespace DirectoryTree\Metrics\Tests;
+namespace LeadMarvels\Metrics\Tests;
 
-use DirectoryTree\Metrics\HasMetrics;
+use LeadMarvels\Metrics\HasMetrics;
 use Illuminate\Database\Eloquent\Model;
 
 class User extends Model

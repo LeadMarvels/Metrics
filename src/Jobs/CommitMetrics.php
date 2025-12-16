@@ -1,9 +1,9 @@
 <?php
 
-namespace DirectoryTree\Metrics\Jobs;
+namespace LeadMarvels\Metrics\Jobs;
 
-use DirectoryTree\Metrics\JsonMeasurableEncoder;
-use DirectoryTree\Metrics\Measurable;
+use LeadMarvels\Metrics\JsonMeasurableEncoder;
+use LeadMarvels\Metrics\Measurable;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

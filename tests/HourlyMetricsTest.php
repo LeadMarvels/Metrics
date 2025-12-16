@@ -1,10 +1,10 @@
 <?php
 
 use Carbon\Carbon;
-use DirectoryTree\Metrics\Facades\Metrics;
-use DirectoryTree\Metrics\Metric;
-use DirectoryTree\Metrics\MetricData;
-use DirectoryTree\Metrics\PendingMetric;
+use LeadMarvels\Metrics\Facades\Metrics;
+use LeadMarvels\Metrics\Metric;
+use LeadMarvels\Metrics\MetricData;
+use LeadMarvels\Metrics\PendingMetric;
 
 beforeEach(function () {
     config(['metrics.queue' => false]);

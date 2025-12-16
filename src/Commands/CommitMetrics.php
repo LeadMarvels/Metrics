@@ -1,8 +1,8 @@
 <?php
 
-namespace DirectoryTree\Metrics\Commands;
+namespace LeadMarvels\Metrics\Commands;
 
-use DirectoryTree\Metrics\MetricManager;
+use LeadMarvels\Metrics\MetricManager;
 use Illuminate\Console\Command;
 
 class CommitMetrics extends Command

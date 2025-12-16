@@ -1,6 +1,6 @@
 <?php
 
-use DirectoryTree\Metrics\Commands\MakeMetricsTable;
+use LeadMarvels\Metrics\Commands\MakeMetricsTable;
 use Orchestra\Testbench\Concerns\InteractsWithPublishedFiles;
 
 use function Pest\Laravel\artisan;

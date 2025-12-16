@@ -1,5 +1,5 @@
 {
-    "name": "directorytree/metrics",
+    "name": "leadmarvels/metrics",
     "description": "Record metrics in your Laravel application",
     "type": "library",
     "require": {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DirectoryTree\\Metrics\\": "src/"
+            "LeadMarvels\\Metrics\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -30,7 +30,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DirectoryTree\\Metrics\\Tests\\": "tests/"
+            "LeadMarvels\\Metrics\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -42,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DirectoryTree\\Metrics\\MetricServiceProvider"
+                "LeadMarvels\\Metrics\\MetricServiceProvider"
             ],
             "aliases": {
-                "Metrics": "DirectoryTree\\Metrics\\Facades\\Metrics"
+                "Metrics": "LeadMarvels\\Metrics\\Facades\\Metrics"
             }
         }
     },

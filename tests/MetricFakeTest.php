@@ -1,8 +1,8 @@
 <?php
 
-use DirectoryTree\Metrics\Facades\Metrics;
-use DirectoryTree\Metrics\MetricData;
-use DirectoryTree\Metrics\MetricFake;
+use LeadMarvels\Metrics\Facades\Metrics;
+use LeadMarvels\Metrics\MetricData;
+use LeadMarvels\Metrics\MetricFake;
 use Illuminate\Support\Collection;
 use PHPUnit\Framework\AssertionFailedError;
 

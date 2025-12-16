@@ -1,6 +1,6 @@
 <?php
 
-namespace DirectoryTree\Metrics;
+namespace LeadMarvels\Metrics;
 
 use BackedEnum;
 use Illuminate\Database\Eloquent\Model;

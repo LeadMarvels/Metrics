@@ -1,7 +1,7 @@
 <?php
 
-use DirectoryTree\Metrics\ArrayMetricRepository;
-use DirectoryTree\Metrics\MetricData;
+use LeadMarvels\Metrics\ArrayMetricRepository;
+use LeadMarvels\Metrics\MetricData;
 
 it('starts with an empty array', function () {
     $repository = app(ArrayMetricRepository::class);

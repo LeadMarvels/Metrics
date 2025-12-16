@@ -1,8 +1,8 @@
 <?php
 
-use DirectoryTree\Metrics\Tests\User;
+use LeadMarvels\Metrics\Tests\User;
 
-uses(DirectoryTree\Metrics\Tests\TestCase::class)->in(__DIR__);
+uses(LeadMarvels\Metrics\Tests\TestCase::class)->in(__DIR__);
 
 function createUser(array $attributes = []): User
 {

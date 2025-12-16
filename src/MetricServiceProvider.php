@@ -1,10 +1,10 @@
 <?php
 
-namespace DirectoryTree\Metrics;
+namespace LeadMarvels\Metrics;
 
-use DirectoryTree\Metrics\Commands\CommitMetrics;
-use DirectoryTree\Metrics\Commands\MakeMetricsModel;
-use DirectoryTree\Metrics\Commands\MakeMetricsTable;
+use LeadMarvels\Metrics\Commands\CommitMetrics;
+use LeadMarvels\Metrics\Commands\MakeMetricsModel;
+use LeadMarvels\Metrics\Commands\MakeMetricsTable;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Queue;

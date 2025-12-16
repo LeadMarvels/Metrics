@@ -1,9 +1,9 @@
 <?php
 
-namespace DirectoryTree\Metrics;
+namespace LeadMarvels\Metrics;
 
-use DirectoryTree\Metrics\Jobs\CommitMetrics;
-use DirectoryTree\Metrics\Jobs\RecordMetric;
+use LeadMarvels\Metrics\Jobs\CommitMetrics;
+use LeadMarvels\Metrics\Jobs\RecordMetric;
 
 class DatabaseMetricManager implements MetricManager
 {

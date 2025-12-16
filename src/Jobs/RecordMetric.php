@@ -1,10 +1,10 @@
 <?php
 
-namespace DirectoryTree\Metrics\Jobs;
+namespace LeadMarvels\Metrics\Jobs;
 
-use DirectoryTree\Metrics\DatabaseMetricManager;
-use DirectoryTree\Metrics\Measurable;
-use DirectoryTree\Metrics\Metric;
+use LeadMarvels\Metrics\DatabaseMetricManager;
+use LeadMarvels\Metrics\Measurable;
+use LeadMarvels\Metrics\Metric;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

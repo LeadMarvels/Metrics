@@ -1,11 +1,11 @@
 <?php
 
 use Carbon\CarbonImmutable;
-use DirectoryTree\Metrics\Facades\Metrics;
-use DirectoryTree\Metrics\Jobs\CommitMetrics;
-use DirectoryTree\Metrics\Jobs\RecordMetric;
-use DirectoryTree\Metrics\Metric;
-use DirectoryTree\Metrics\MetricData;
+use LeadMarvels\Metrics\Facades\Metrics;
+use LeadMarvels\Metrics\Jobs\CommitMetrics;
+use LeadMarvels\Metrics\Jobs\RecordMetric;
+use LeadMarvels\Metrics\Metric;
+use LeadMarvels\Metrics\MetricData;
 use Illuminate\Support\Facades\Queue;
 
 beforeEach(function () {

@@ -1,9 +1,9 @@
 <?php
 
 use Carbon\CarbonImmutable;
-use DirectoryTree\Metrics\JsonMeasurableEncoder;
-use DirectoryTree\Metrics\MetricData;
-use DirectoryTree\Metrics\Tests\User;
+use LeadMarvels\Metrics\JsonMeasurableEncoder;
+use LeadMarvels\Metrics\MetricData;
+use LeadMarvels\Metrics\Tests\User;
 use Illuminate\Support\Facades\Date;
 
 it('encodes a basic metric with only name', function () {
@@ -63,7 +63,7 @@ it('encodes a metric with measurable model', function () {
     $decoded = json_decode($encoded, true);
 
     expect($decoded['name'])->toBe('logins')
-        ->and($decoded['measurable'])->toBe('DirectoryTree\Metrics\Tests\User')
+        ->and($decoded['measurable'])->toBe('LeadMarvels\Metrics\Tests\User')
         ->and($decoded['measurable_key'])->toBe('id')
         ->and($decoded['measurable_id'])->toBe(123);
 });
@@ -85,7 +85,7 @@ it('encodes a metric with all properties', function () {
         ->and($decoded['year'])->toBe(2025)
         ->and($decoded['month'])->toBe(6)
         ->and($decoded['day'])->toBe(20)
-        ->and($decoded['measurable'])->toBe('DirectoryTree\Metrics\Tests\User')
+        ->and($decoded['measurable'])->toBe('LeadMarvels\Metrics\Tests\User')
         ->and($decoded['measurable_key'])->toBe('id')
         ->and($decoded['measurable_id'])->toBe(456);
 });

@@ -1,8 +1,8 @@
 <?php
 
-use DirectoryTree\Metrics\MetricData;
-use DirectoryTree\Metrics\RedisMetricRepository;
-use DirectoryTree\Metrics\Tests\User;
+use LeadMarvels\Metrics\MetricData;
+use LeadMarvels\Metrics\RedisMetricRepository;
+use LeadMarvels\Metrics\Tests\User;
 use Illuminate\Support\Facades\Redis;
 
 beforeEach(fn () => Redis::flushdb());

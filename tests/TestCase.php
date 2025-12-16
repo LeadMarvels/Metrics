@@ -1,8 +1,8 @@
 <?php
 
-namespace DirectoryTree\Metrics\Tests;
+namespace LeadMarvels\Metrics\Tests;
 
-use DirectoryTree\Metrics\MetricServiceProvider;
+use LeadMarvels\Metrics\MetricServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 use function Orchestra\Testbench\laravel_migration_path;

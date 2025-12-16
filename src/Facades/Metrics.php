@@ -1,14 +1,14 @@
 <?php
 
-namespace DirectoryTree\Metrics\Facades;
+namespace LeadMarvels\Metrics\Facades;
 
-use DirectoryTree\Metrics\Measurable;
-use DirectoryTree\Metrics\MetricFake;
-use DirectoryTree\Metrics\MetricManager;
+use LeadMarvels\Metrics\Measurable;
+use LeadMarvels\Metrics\MetricFake;
+use LeadMarvels\Metrics\MetricManager;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \DirectoryTree\Metrics\Metric|null record(Measurable $metric)
+ * @method static \LeadMarvels\Metrics\Metric|null record(Measurable $metric)
  * @method static void commit()
  * @method static void capture()
  * @method static bool isCapturing()
@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static void assertNotRecorded(\Closure|string $callback)
  * @method static void assertNothingRecorded()
  *
- * @see \DirectoryTree\Metrics\MetricManager
- * @see \DirectoryTree\Metrics\MetricFake
+ * @see \LeadMarvels\Metrics\MetricManager
+ * @see \LeadMarvels\Metrics\MetricFake
  */
 class Metrics extends Facade
 {

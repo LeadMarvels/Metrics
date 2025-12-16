@@ -1,6 +1,6 @@
 <?php
 
-use DirectoryTree\Metrics\PendingMetric;
+use LeadMarvels\Metrics\PendingMetric;
 
 if (! function_exists('metric')) {
     /**

@@ -1,6 +1,6 @@
 <?php
 
-use DirectoryTree\Metrics\Metric;
+use LeadMarvels\Metrics\Metric;
 use Illuminate\Support\Carbon;
 
 beforeEach(function () {

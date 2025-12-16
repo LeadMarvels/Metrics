@@ -1,6 +1,6 @@
 <?php
 
-namespace DirectoryTree\Metrics\Support;
+namespace LeadMarvels\Metrics\Support;
 
 use BackedEnum;
 use UnitEnum;

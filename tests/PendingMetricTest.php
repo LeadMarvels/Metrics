@@ -1,11 +1,11 @@
 <?php
 
 use Carbon\Carbon;
-use DirectoryTree\Metrics\Facades\Metrics;
-use DirectoryTree\Metrics\Jobs\RecordMetric;
-use DirectoryTree\Metrics\Metric;
-use DirectoryTree\Metrics\PendingMetric;
-use DirectoryTree\Metrics\Tests\User;
+use LeadMarvels\Metrics\Facades\Metrics;
+use LeadMarvels\Metrics\Jobs\RecordMetric;
+use LeadMarvels\Metrics\Metric;
+use LeadMarvels\Metrics\PendingMetric;
+use LeadMarvels\Metrics\Tests\User;
 
 it('can be instantiated with constructor', function () {
     $pending = new PendingMetric('page_views');

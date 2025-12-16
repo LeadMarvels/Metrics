@@ -1,9 +1,9 @@
 <?php
 
-namespace DirectoryTree\Metrics;
+namespace LeadMarvels\Metrics;
 
 use Carbon\CarbonImmutable;
-use DirectoryTree\Metrics\Support\Enum;
+use LeadMarvels\Metrics\Support\Enum;
 
 class JsonMeasurableEncoder implements MeasurableEncoder
 {

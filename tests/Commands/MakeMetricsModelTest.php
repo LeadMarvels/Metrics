@@ -1,6 +1,6 @@
 <?php
 
-use DirectoryTree\Metrics\Commands\MakeMetricsModel;
+use LeadMarvels\Metrics\Commands\MakeMetricsModel;
 use Orchestra\Testbench\Concerns\InteractsWithPublishedFiles;
 
 use function Pest\Laravel\artisan;
@@ -53,8 +53,8 @@ it('generates model with all required imports', function () {
         ->assertSuccessful();
 
     $this->assertFileContains([
-        'use DirectoryTree\Metrics\MetricBuilder;',
-        'use DirectoryTree\Metrics\MetricFactory;',
+        'use LeadMarvels\Metrics\MetricBuilder;',
+        'use LeadMarvels\Metrics\MetricFactory;',
         'use Illuminate\Database\Eloquent\Factories\HasFactory;',
         'use Illuminate\Database\Eloquent\Model;',
     ], 'app/CustomMetric.php');

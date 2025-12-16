@@ -1,6 +1,6 @@
 <?php
 
-namespace DirectoryTree\Metrics;
+namespace LeadMarvels\Metrics;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;

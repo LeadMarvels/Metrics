@@ -1,13 +1,13 @@
 <?php
 
-use DirectoryTree\Metrics\Commands\CommitMetrics;
-use DirectoryTree\Metrics\Facades\Metrics;
-use DirectoryTree\Metrics\Jobs\CommitMetrics as CommitMetricsJob;
-use DirectoryTree\Metrics\Metric;
-use DirectoryTree\Metrics\MetricData;
-use DirectoryTree\Metrics\MetricRepository;
-use DirectoryTree\Metrics\RedisMetricRepository;
-use DirectoryTree\Metrics\Tests\User;
+use LeadMarvels\Metrics\Commands\CommitMetrics;
+use LeadMarvels\Metrics\Facades\Metrics;
+use LeadMarvels\Metrics\Jobs\CommitMetrics as CommitMetricsJob;
+use LeadMarvels\Metrics\Metric;
+use LeadMarvels\Metrics\MetricData;
+use LeadMarvels\Metrics\MetricRepository;
+use LeadMarvels\Metrics\RedisMetricRepository;
+use LeadMarvels\Metrics\Tests\User;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
 

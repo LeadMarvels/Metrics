@@ -1,10 +1,10 @@
 <?php
 
 use Carbon\CarbonImmutable;
-use DirectoryTree\Metrics\Jobs\RecordMetric;
-use DirectoryTree\Metrics\Metric;
-use DirectoryTree\Metrics\MetricData;
-use DirectoryTree\Metrics\Tests\User;
+use LeadMarvels\Metrics\Jobs\RecordMetric;
+use LeadMarvels\Metrics\Metric;
+use LeadMarvels\Metrics\MetricData;
+use LeadMarvels\Metrics\Tests\User;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
